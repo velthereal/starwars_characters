@@ -1,0 +1,16 @@
+h1 {
+	text-align: center;
+}
+h1 img {
+	width: 50%;
+	filter: drop-shadow(1px 1px 5px rgb(32, 108, 208));
+}
+.content {
+	margin: 15px 30px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 10px;
+}
+.card {
+	text-align: center;
+}
