@@ -3,7 +3,7 @@ h1 {
 }
 h1 img {
 	width: 50%;
-	filter: drop-shadow(1px 1px 5px rgb(32, 108, 208));
+	filter: drop-shadow(1px 1px 5px rgb(32, 108, 207));
 }
 .content {
 	margin: 15px 30px;
@@ -13,4 +13,13 @@ h1 img {
 }
 .card {
 	text-align: center;
+}
+.card-header{
+	font-size: 1.5em;
+	word-wrap: normal;
+}
+.box {
+	margin: 15px 30px;
+	display: flex;
+	justify-content: flex-end;
 }

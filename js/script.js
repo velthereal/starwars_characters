@@ -1,16 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
+	getPersons(1);
+});
+
+function getPersons(page){
 	let xml = new XMLHttpRequest();
-	let url = 'https://swapi.dev/api/people/';
+	let url = `https://swapi.dev/api/people/?page=${page}`;
 	xml.open('GET', url);
 	xml.responseType = 'json';
 	xml.send();
 	xml.onload = () => {
 		showAllPerson(xml.response.results);
 	}
-});
+}
 
 function showAllPerson(data){
 	let content = document.querySelector('.content');
+	content.innerHTML = '';
 	data.forEach(element => {
 		let str = `<div class="card mb-3">
 			<h3 class="card-header">${element.name}</h3>
